@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" src="src/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div class="display">
+        <span id="result">Resultado</span>
+      </div>
+      <h2>Clique na sua escolha</h2>
+      <ul>
+        <li>
+          <button id="btnPedra" class="btnChoice">Pedra</button>
+          <button id="btnTesoura" class="btnChoice">Tesoura</button>
+          <button id="btnPapel" class="btnChoice">Papel</button>
+        </li>
+        <div>
+          <h2>Escolha do jogador:</h2>
+          <span id="playerChoice"></span>
+          <h2>Escolha do computador:</h2>
+          <span id="computerChoice"></span>
+        </div>
+        <div><h3>Placar</h3></div>
+        <p>Jogador: <span id="playerScore">0</span></p>
+        <p>Computador: <span id="computerScore">0</span></p>
+        <p>Empates: <span id="drawScore">0</span></p>
+      </ul>
+    </div>
+  </body>
+  <script src="src/js/script.js"></script>
+</html>
