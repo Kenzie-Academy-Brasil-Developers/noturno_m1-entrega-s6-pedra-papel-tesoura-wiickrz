@@ -1,0 +1,34 @@
+body {
+  background-image: url("https://c0.wallpaperflare.com/preview/1001/816/59/puzzle-pieces-of-the-puzzle-connection-puzzles.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: rgba(16, 17, 17, 0.447);
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+#pcChoice,
+#playerChoice {
+  color: white;
+}
+
+.details {
+  text-align: center;
+}

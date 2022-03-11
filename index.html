@@ -1,35 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" src="src/css/style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Pedra, Papel, Tesoura Game</title>
   </head>
   <body>
-    <div>
-      <div class="display">
-        <span id="result">Resultado</span>
+    <div class="container">
+      <div class="scores">
+        <p>
+          Computador:
+          <span id="pcScore">0</span>
+        </p>
+        <p>
+          Você:
+          <span id="playerScore">0</span>
+        </p>
+        <p>
+          Empates:
+          <span id="drawScore">0</span>
+        </p>
       </div>
-      <h2>Clique na sua escolha</h2>
-      <ul>
-        <li>
-          <button id="btnPedra" class="btnChoice">Pedra</button>
-          <button id="btnTesoura" class="btnChoice">Tesoura</button>
-          <button id="btnPapel" class="btnChoice">Papel</button>
-        </li>
-        <div>
-          <h2>Escolha do jogador:</h2>
-          <span id="playerChoice"></span>
-          <h2>Escolha do computador:</h2>
-          <span id="computerChoice"></span>
-        </div>
-        <div><h3>Placar</h3></div>
-        <p>Jogador: <span id="playerScore">0</span></p>
-        <p>Computador: <span id="computerScore">0</span></p>
-        <p>Empates: <span id="drawScore">0</span></p>
-      </ul>
+      <div class="plChoices">
+        <button id="rock" onclick="checkValues('Pedra')">
+          <img src="./src/img/rock.png" />
+        </button>
+        <button id="scissors" onclick="checkValues('Tesoura')">
+          <img src="./src/img/scissors.png" />
+        </button>
+        <button id="paper" onclick="checkValues('Papel')">
+          <img src="./src/img/paper.png" />
+        </button>
+      </div>
+      <div class="details">
+        <p id="pcChoice">Sua escolha: <span id="displayPlayer"></span></p>
+        <p id="pcChoice">Escolha do computador: <span id="displayPC"></span></p>
+        <p id="scoreBoard"></p>
+      </div>
     </div>
   </body>
   <script src="src/js/script.js"></script>
